@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 40px;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    img {
+      border: 2px solid #333;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      font-size: 18px;
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+  <h2>Upload Gambar untuk Deteksi Level Air (YOLOv8)</h2>
+
+  <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" accept="image/*" required>
+    <button type="submit">Upload & Deteksi</button>
+  </form>
+
+  {% if uploaded %}
+    <h3>Hasil Deteksi:</h3>
+    <img src="{{ url_for('static', filename=img_path) }}" width="600">
+    
+    <h4>Deteksi:</h4>
+    <ul>
+      {% for det in detections %}
+        <li>{{ det.label }} - Confidence: {{ det.confidence }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</body>
+</html>
