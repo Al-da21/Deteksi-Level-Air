@@ -9,3 +9,4 @@ Dataset yang digunakan adalah hasil dari labeling dengan menggunakan Roboflow ya
 4. empty
 
 Antarmuka Web Upload Gambar dan menampilkan hasil deteksi objek.
+
