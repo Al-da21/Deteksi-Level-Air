@@ -56,6 +56,8 @@ Summary of water level classification per media.
 
 
 🖼️ Example
+
+
 ![image](https://github.com/user-attachments/assets/399ab8a7-dfe8-431e-ba51-9e3e0c63927d)
 
 
