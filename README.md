@@ -1,12 +1,4 @@
-# Deteksi-Level-Air
-
-Proyek ini bertujuan untuk mendeteksi level air pada gelas, dengan menggunakan model deteksi objek YOLOv8 dan hasil akan ditampilkan pada antarmuka web yang mendukung input gambar.
-
-Dataset yang digunakan adalah hasil dari labeling dengan menggunakan Roboflow yang memiliki beberapa class yaitu: 
-1. full
-2. half
-3. quater
-4. empty
-
-Antarmuka Web Upload Gambar dan menampilkan hasil deteksi objek.
+💧 Water Level Detection in Storage Tanks
+📌 Overview
+This system is designed to detect water levels in storage tanks using computer vision. It classifies the water condition into four categories: Full, Half, Low, and Empty. Built with YOLOv8, the model is capable of detecting water levels from images or video frames. A simple web-based interface using Flask allows users to upload media and view detection results directly.
 
